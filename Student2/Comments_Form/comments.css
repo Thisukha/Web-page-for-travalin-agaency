@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#question-container {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+p {
+  color: white;
+  padding-bottom: 1px;
+}
+
+form {
+  width: 550px;
+  border: 1.5px solid #182492;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.58);
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  resize: none;
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #182492;
+  border-radius: 4px;
+  background-color: #c0d7ff;
+}
+
+.rating {
+  direction: rtl;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.rating span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  color: #ffca08;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  display: inline-block;
+  padding: 0 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.rating label:before {
+  content: "\2605";
+  transition: all 0.2s ease;
+}
+.rating label:hover {
+  transition: 0.2s ease;
+}
+
+.rating input[type="radio"]:checked ~ label:before {
+  color: #ffca08;
+}
+
+#send {
+  position: absolute;
+  right: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: rgba(80, 80, 80, 0.51);
+  border: 1px solid #444;
+  outline: none;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  border-radius: 28px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#input-container {
+  display: flex;
+  justify-content: space-between;
+  padding: inherit;
+}
+
+#button-holder {
+  position: relative;
+  padding-left: 10px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+

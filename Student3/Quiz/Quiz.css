@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+
+body{
+    background-image: url(../Images/Quiz_Background.jpg);
+    background-size: 100%;
+}
+
+.app{
+   background: #fff; 
+   width: 90%;
+   max-width: 600px;
+   margin: 100px auto 0;
+   border-radius: 10px;
+   padding: 30px;
+
+}
+
+.app header{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app header .timer{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    color:#001e4d;
+    border: 1px solid #001e4d;
+    padding: 0 8px;
+}
+
+.app header .timer .time_text{
+    user-select: none;
+}
+
+.app header .timer .time_sec{
+    background: #001e4d;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+    user-select: none;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+   font-size: 18px; 
+   color:#001e4d;
+   font-weight: 600;
+}
+
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+    background: #001e4d;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#timeout-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}
+
+.myeditor {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+    
+}
+
+.myeditor a:hover {
+    color: red;
+}

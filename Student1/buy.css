@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    margin-top: 130px;
+}
+.tickets{
+    background-color: black;
+    border-radius: 20px;
+    width: 900px;
+    height: 350px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    border: 2px solid #9B7538;
+    display: flex;
+}
+
+h2{
+    color: #9B7538;
+}
+
+p{
+    color: white;
+}
+
+
+.product-img{
+    height: 350px;
+    width: 500px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    
+}
+.ticketinfo{
+    width: 350px;
+    height: 350px;
+    margin-left: 40px;
+}
+
+.product-name{
+    text-align: center;
+
+}
+
+#cart-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    cursor: pointer;
+    padding: 10px 50px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    left: 100px;
+}
+
+.add-to-cart:hover {
+    background-color:lightyellow;
+}
+
+
+
+.cart-quantity {
+    border: 1px solid white;
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    display: flex;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 10px 150px;
+    background-color: white;
+}
+  
+.buy-button:hover {
+    background: black;
+    color: white;
+}
+  
+.invoiceTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: white;
+    margin-right: 20px;
+  
+}
+
+h1{
+    color: white;
+    margin-left: 30px;
+}
+
+.receipt{
+    color: white;
+    margin-left: 30px;
+}
+
+.cartDev{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 2px solid #9B7538;
+    
+    
+}
+
+a{
+    color: white;
+    margin-left: 20px;
+   
+}
+
+.info-container  {
+    background-color: black;
+    
+
+}
+
+.breadcrumb{
+    font-size: 35px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+h3{
+    color: white;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info-field{
+    color: white;
+    margin-left: 30px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+

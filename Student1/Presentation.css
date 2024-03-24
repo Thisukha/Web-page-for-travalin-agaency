@@ -1,0 +1,53 @@
+body {
+    background-image: url('images/Sri-Lanka-Heritage-Tour.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.Group {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    color: #020202;
+    text-align: center;
+    padding: 0%;
+
+}
+
+.class {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #ffd700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Names {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: #050505;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.B{
+    margin-left: 31%;
+    margin-right: 31%;
+    background-color: rgba(248, 247, 247, 0.316);
+    border-radius: 24px;
+    
+    
+}
+
+
+
+

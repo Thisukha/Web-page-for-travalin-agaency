@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="navigation_bar.css">
+    <script src="shop.js"></script>
+    <title> Book now </title>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div><a href="../Student2/Main_page/home.html">TravelEz</a></div>
+        <nav>
+            <ul>
+                <li><a href="../Student1/Buy.html">Our Products</a></li>
+                <li><a href="../Student3/Quiz/Quiz.html">Quiz</a></li>
+                <li><a href="../Student4/Sitemap/Site_Map.html">Site-Map</a></li>
+                <li><a href="../Student2/Comments_Form/comments.html">Feedback</a></li>
+                <li><a href="../../Student3/Student_details/StudentDetails.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <br><br><br>
+
+    <div class="shop" id="shop">
+        <div class="tickets">
+            <div>
+                <img src="images/CK.jpg" alt="Colombo to kandy" class="product-img" />
+            </div>
+
+            <div class="ticketinfo">
+                <h2 class="product-name"> COLOMBO TO KANDY TICKET</h2>
+                <p>Site : Colombo to kandy <br> Ticket Type : Valid for one day only. <br> Entry Time : 7.00 AM to
+                    8.00pm
+                    <br><br>
+                    Restrictions: <br>
+                    * No Out side food allowed insde the train. <br>
+                </p>
+                <p class="product-price" data-value="10">$10</p>
+                <p>Quantity:</p>
+                <input type="number" value="1" min="1" max="30" class="cart-quantity" />
+                <!--when cart icon is clicked, it will display product information under shopping cart-->
+                <button class="add-to-cart" onclick="validateCart(event)">Add to cart</button>
+            </div>
+        </div>
+
+
+
+        <div class="tickets">
+            <div>
+                <img src="images/2.jpg" alt="kandy to badulla" class="product-img" />
+            </div>
+
+            <div class="ticketinfo">
+                <h2 class="product-name"> KANDY TO BADULLA TICKET</h2>
+                <p>Site :kandy to badulla <br> Ticket Type : Valid for one day only. <br> Entry Time : 10.00 AM to
+                    3.00pm
+                    <br><br>
+                    Restrictions: <br>
+                    * No Out side food allowed insde the train. <br>
+                </p>
+                <p class="product-price" data-value="12">$12</p>
+                <p>Quantity:</p>
+                <input type="number" value="1" min="1" max="30" class="cart-quantity" />
+                <!--when cart icon is clicked, it will display product information under shopping cart-->
+                <button class="add-to-cart" onclick="validateCart(event)">Add to cart</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="tickets">
+            <div>
+                <img src="images/OIP.jpeg" alt="Colombo to Galle" class="product-img" />
+            </div>
+
+            <div class="ticketinfo">
+                <h2 class="product-name"> COLOMBO TO GALLE TICKET</h2>
+                <p>Site : Colombo to Galle <br> Ticket Type : Valid for one day only. <br> Entry Time : 9.00 AM to
+                    12.00pm
+                    <br><br>
+                    Restrictions: <br>
+                    * No Out side food allowed insde the train. <br>
+                </p>
+                <p class="product-price" data-value="14">$14</p>
+                <p>Quantity:</p>
+                <input type="number" value="1" min="1" max="30" class="cart-quantity" />
+                <!--when cart icon is clicked, it will display product information under shopping cart-->
+                <button class="add-to-cart" onclick="validateCart(event)">Add to cart</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="tickets">
+            <div>
+                <img src="images/t.jpg" alt="Anuradhapura to Jaffna" class="product-img" />
+            </div>
+
+            <div class="ticketinfo">
+                <h2 class="product-name"> ANURADHAPURA TO JAFFNA TICKET</h2>
+                <p>Site : Colombo to kandy <br> Ticket Type : Valid for one day only. <br> Entry Time : 4.00 AM to
+                    11.00pm
+                    <br><br>
+                    Restrictions: <br>
+                    * No Out side food allowed insde the train. <br>
+                </p>
+                <p class="product-price" data-value="10">$10</p>
+                <p>Quantity:</p>
+                <input type="number" value="1" min="1" max="30" class="cart-quantity" />
+                <!--when cart icon is clicked, it will display product information under shopping cart-->
+                <button class="add-to-cart" onclick="validateCart(event)">Add to cart</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="cartDev">
+            <!--Beginning of Shopping cart-->
+            <h1 id="shopping-cart">Shopping Cart</h1>
+            <!--Holds all details of products added to cart -->
+            <div id="invoice-box" class="receipt"></div>
+            <!--holds the total price-->
+            <div class="invoiceTotal">
+                <p id="invoiceTotal"></p>
+            </div>
+
+            <hr>
+
+            <div class="info-container" id="info-container">
+                <!--breadcrumb-->
+                <div class="breadcrumb">
+                    <p> Billing Information</p>
+                </div>
+                <!--Content-->
+                <div class="address-container">
+                    <form method="post">
+                        <h3>Contact Information</h3>
+
+                        <!--EMAIL FIELD-->
+                        <div class="info-field">
+                            <label for="email">Email </label>
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                        </div>
+
+                        <!--FIRST NAME-->
+                        <div class="info-field">
+                            <label for="f-name">First name</label>
+                            <input type="text" name="First Name" id="f-name" placeholder="First name" />
+                        </div>
+
+                        <!--LAST NAME-->
+                        <div class="info-field">
+                            <label for="l-name">Last name</label>
+                            <input type="text" name="Surname" id="l-name" placeholder="Last name" />
+                        </div>
+
+
+
+
+
+                        <br>
+
+                </div>
+            </div>
+
+
+
+
+            <!--button that will direct to information page once clicked-->
+            <button type="button" class="buy-button" onclick="checkout()">
+                CHECKOUT
+            </button>
+            <div class="separator"></div>
+            <!--anchor element links to the top of the page-->
+            <a href="#shop"><u>Back to top</u></a>
+
+
+
+            <footer>
+                <p>Follow Us On Our Social Networks</p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <img src="../Student2/Images/facebook.png" alt="facebook-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/">
+                            <img src="../Student2/Images/twitter.jpg" alt="twitter-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <img src="../Student2/Images/insta.png" alt="instagram-logo">
+                        </a>
+                    </li>
+                </ul>
+                <p class="editor">
+                    <a href="../Student1/Page Editor.html">&#169; By Thisukha de silva </a>
+                </p>
+                <p class="editor">
+                    Project by Team TravelEz
+                </p>
+                <p class="editor" id="copyright">
+                    &#169; Copyright 2023 - The Team TravelEz
+                </p>
+            </footer>
+
+
+</body>
+
+</html>

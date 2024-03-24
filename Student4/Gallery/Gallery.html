@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../Student2/Navigation_bar/navigation_bar.css">
+    <link rel="stylesheet" href="../Gallery/Gallery.css">
+</head>
+
+<body>
+    <div class="nav_head">
+        <div><a href="../Main_page/home.html">TravelEz</a></div>
+        <nav>
+            <ul>
+                <li><a href="../../Student1/Buy.html">Our Products</a></li>
+                <li><a href="../../Student3/Quiz/Quiz.html">Quiz</a></li>
+                <li><a href="../../Student4/Sitemap/Site_Map.html">Site-Map</a></li>
+                <li><a href="../../Student2/Comments_Form/comments.html">Feedback</a></li>
+                <li><a href="../../Student3/Student_details/StudentDetails.html">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <br> <br> <br> <br> <br>
+
+    <!-- dropdown for background color  -->
+    <div class="selection">
+        <select id="selectcolorid">
+            <option value="" selected disabled hidden> --Select Background Color--</option>
+            <option value="#A020F0">Purple</option>
+            <option value="#00BFFF">Blue</option>
+            <option value="#000000">Black</option>
+            <option value="">none</option>
+        </select>
+        <!-- created button for switch color -->
+        <button class="glow-on-hover" onclick="changecolor()">Switch The color</button>
+
+        <!-- created button for random button -->
+        <button class="random"> <span> Random </span> </button>
+
+
+
+        <!-- created font size buttons -->
+        <button class="btn1">A-</button>
+        <button class="btn2">A</button>
+        <button class="btn3">A+</button>
+    </div>
+
+
+    <br> <br> <br> <br>
+    <div class="container" id="main-container">
+
+        <div class="left-text">
+            <h1 class="heading">Hotels in Sri Lanka</h1>
+            <p class="subheading">Find hotels in some of the most popular cities in Sri Lanka</p>
+        </div>
+        <div class="gallery">
+            <div class="box" style="background-image: url(Images/HotelYo.jpg);"
+                data-description="Ideally set in Kandy, Hotel Yo Kandy offers air-conditioned rooms with free WiFi, free private parking and room service. Among the various facilities of this property are a garden, a shared lounge and a terrace. The accommodation provides a 24-hour front desk, a concierge service and currency exchange for guests. Breakfast is available every morning, and includes continental, Full English/Irish and Italian options. The restaurant at Hotel Yo Kandy specialises in Cantonese and local cuisine."
+                onmouseover="delayShowImage(this)">Hotel Yo, Kandy</div>
+            <div class="box" style="background-image: url(Images/HeritanceKandalama.jpg);"
+                data-description="A tranquil retreat perched on hills, Heritance Kandalama offers panoramic views of the Sigiriya Rocks. Boasting a spectacular architecture, this unique design hotel provides 3 impressive pools and exotic activities like bird watching. Kandalama Heritance is a 20-minute drive from UNESCO World Heritage Sites, the 2,000-year-old cave temple at Dambulla and the Sigiriya rock fortress. The 5-star hotel is a 3.5-hour drive from the airport."
+                onmouseover="delayShowImage(this)">Heritance Kandalama, Sigiriya</div>
+            <div class="box" style="background-image: url(Images/FoxResorts.jpg);"
+                data-description="Located in Jaffna, 4.4 km from Nallur Kandaswamy Temple, FOX JAFFNA by Fox Resorts provides accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge. Jaffna Public Library is 4.6 km from FOX JAFFNA by Fox Resorts, while Jaffna Railway Station is 5 km away. The nearest airport is Jaffna International Airport, 11 km from the resort."
+                onmouseover="delayShowImage(this)">Fox Resorts, Jaffna</div>
+            <div class="box" style="background-image: url(Images/TheSummit.jpg);"
+                data-description="Set in Kandy, 3.4 km from Bogambara Stadium, The Summit offers accommodation with a garden, free private parking and a bar. This 5-star hotel offers room service, a 24-hour front desk and free WiFi. The accommodation features a concierge service, a tour desk and currency exchange for guests. Ceylon Tea Museum is 3.5 km from The Summit, while Kandy railway station is 3.7 km away. The nearest airport is Katugastota Polgolla Reservoir Seaplane Base Airport, 9 km from the hotel."
+                onmouseover="delayShowImage(this)">The Summit, Kandy</div>
+            <div class="box" style="background-image: url(Images/Anantara.jpg);"
+                data-description="Featuring a mesmerising secluded beachfront, Anantara Peace Haven Tangalle Resort is located on cliff in a large coconut plantation with panoramic sea views. Anantara Peace Haven Tangalle Resort is a 30-minute drive from Mulkirigala Rock Temple, a 1 and a half hour drive from the infamous Galle Fort, and 2-hour drive from Yala National Park providing guests with the opportunity to see Elephants and Leopards. Anantara Peace Haven Tangalle Resort is a 2.5 hours drive from the Bandaranaike International Airport."
+                onmouseover="delayShowImage(this)">Anantara Peace Haven Tangalle Resort </div>
+        </div>
+
+    </div>
+
+    <!-- create image overlay -->
+    <div id="overlay">
+        <div id="full-image-container">
+            <!-- creates  close  button -->
+            <div class="close-button">&#10005;</div>
+            <img id="full-image" alt="full">
+            <p id="full-image-description"></p>
+        </div>
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <hr>
+    <footer>
+        <p>Follow Us On Our Social Networks</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/">
+                    <img src="../../Student2/Images/facebook.png" alt="facebook-logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/">
+                    <img src="../../Student2/Images/twitter.jpg" alt="twitter-logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/">
+                    <img src="../../Student2/Images/insta.png" alt="instagram-logo">
+                </a>
+            </li>
+        </ul>
+        <p class="editor">
+            <a href="#">&#169; By Dilsha Devindi Perera</a>
+        </p>
+        <p class="editor">
+            Project by Team TravelEz
+        </p>
+        <p class="editor" id="copyright">
+            &#169; Copyright 2023 - The Team TravelEz
+        </p>
+    </footer>
+    <script src="./js/gallery.js"></script>
+</body>
+
+</html>

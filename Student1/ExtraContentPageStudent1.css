@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* adding a back ground colour for the page*/
+body {
+    background-color: black;
+}
+
+/* adding font colours*/
+p {
+    color: white;
+
+}
+
+h1 {
+    color: gold;
+}
+
+/* adding styling for first image and first content*/
+.mainContainer {
+    display: flex;
+
+}
+
+.imageCairo {
+
+    margin-right: 25px;
+    margin-left: -8px;
+    margin-top: -8px;
+
+
+
+}
+
+img {
+    width: 800px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+/* adding styling for second image and second content*/
+
+.mainContainer2 {
+    display: flex;
+
+}
+
+.imageCairo2 {
+
+    margin-top: 15px;
+
+    margin-right: -8px;
+
+
+
+}
+
+
+.content2 {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 15px;
+}

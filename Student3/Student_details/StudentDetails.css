@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat",sans-serif;
+    transition: all .2s linear;
+}
+
+body{
+    background-image: url(../Images/StudentDetails_Background.jpg);
+    background-size: cover;
+}
+
+.heading{
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.heading h1{
+    margin-top: 20px;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.box-container .box{
+    height: 400px;
+    width: 280px;
+    
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.532);
+    overflow: hidden;
+    margin: 20px 15px;
+}
+
+.box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-container .box:hover img{
+    filter:brightness(50%);
+}
+
+.box-container .box .info{
+    text-align: center;
+    color: white;
+    background:linear-gradient(to top, #000000, transparent);
+    position: relative;
+    bottom: 10px;
+}
+
+.box-container .box:hover .info{
+    bottom: 94px;
+}
+
+.box-container .box .info .title{
+    padding: 10px 0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.box-container .box .info .post{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.box-container .box .info .studentNo{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.myeditor {
+    text-align: center;
+    font-size: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.myeditor a:hover {
+    color: red;
+}
